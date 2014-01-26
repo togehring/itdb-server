@@ -1,15 +1,10 @@
-/*
- * @author: Tobias Gehring
- */
 package de.tgehring.itdb.server.entities.dao;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityManager;
-
 
 public class GenericDao<T> {
 	

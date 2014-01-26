@@ -40,7 +40,6 @@ public class CRUDServlet {
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Path("/abteilung")
 	public Response addAbteilung(JAXBElement<Abteilung> abteilung) {
-		GenericDao<Abteilung> abteilungDao = new GenericDao<>(em);
 		CRUDService.getInstance().addAbteilung(abteilung.getValue());
 		String result = "Abteilung saved : " + abteilung.getValue();
 		return Response.status(201).entity(result).build();

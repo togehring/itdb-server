@@ -83,7 +83,7 @@ public class CRUDService {
 	}
 	
 	public List<Abteilung> getAllAbteilung() {
-		return new GenericDao<Abteilung>(em).findAll();;
+		return new GenericDao<Abteilung>(em).findAll();
 	}
 	
 	public void addBenutzer(Benutzer benutzer) {
